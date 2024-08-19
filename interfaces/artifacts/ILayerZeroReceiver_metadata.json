@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_srcChainId",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_srcAddress",
+						"type": "bytes"
+					},
+					{
+						"internalType": "uint64",
+						"name": "_nonce",
+						"type": "uint64"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_payload",
+						"type": "bytes"
+					}
+				],
+				"name": "lzReceive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "is imported from (https://github.com/LayerZero-Labs/LayerZero/blob/main/contracts/interfaces/ILayerZeroReceiver.sol)",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/ILayerZeroReceiver.sol": "ILayerZeroReceiver"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/ILayerZeroReceiver.sol": {
+			"keccak256": "0xb10e11675f1d24ad9e1e91473690b19127f4f0ee3ff5f812cf06c7ec3b740d83",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://aad88628eba7f82e9e7168892f0d2210de2e7f3436115a0fac69348c9ac9a038",
+				"dweb:/ipfs/QmUTNcR1Tt4AGAfxxaSLzAb7JpGJ2zhqUSr5CfLFq5AJhv"
+			]
+		}
+	},
+	"version": 1
+}

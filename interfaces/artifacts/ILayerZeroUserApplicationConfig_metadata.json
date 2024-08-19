@@ -1,0 +1,118 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_srcChainId",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_srcAddress",
+						"type": "bytes"
+					}
+				],
+				"name": "forceResumeReceive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_version",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_chainId",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_configType",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_config",
+						"type": "bytes"
+					}
+				],
+				"name": "setConfig",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_version",
+						"type": "uint16"
+					}
+				],
+				"name": "setReceiveVersion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_version",
+						"type": "uint16"
+					}
+				],
+				"name": "setSendVersion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/ILayerZeroEndpoint.sol": "ILayerZeroUserApplicationConfig"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/ILayerZeroEndpoint.sol": {
+			"keccak256": "0x0bc379177e7898b99f308b4fe4ade7ec7c310e2e999922352a955053aa0152a6",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://acbdcc8f41a11500b5537808cbe1bf82d3206821846499e25bed26afb298e293",
+				"dweb:/ipfs/QmQ3jdP1yYfc1iKCWbbTkMFSwk3hhJWVpUhFGJvFnsighp"
+			]
+		}
+	},
+	"version": 1
+}

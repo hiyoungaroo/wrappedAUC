@@ -1,0 +1,482 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "dstChainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "userApplication_",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "payload_",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bool",
+						"name": "_payInZRO",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_adapterParam",
+						"type": "bytes"
+					}
+				],
+				"name": "estimateFees",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "nativeFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "zroFee",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_srcChainId",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_srcAddress",
+						"type": "bytes"
+					}
+				],
+				"name": "forceResumeReceive",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getChainId",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "version_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "chainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "userApplication_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "configType_",
+						"type": "uint256"
+					}
+				],
+				"name": "getConfig",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "srcChainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "srcAddress_",
+						"type": "bytes"
+					}
+				],
+				"name": "getInboundNonce",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "dstChainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "address",
+						"name": "srcAddress_",
+						"type": "address"
+					}
+				],
+				"name": "getOutboundNonce",
+				"outputs": [
+					{
+						"internalType": "uint64",
+						"name": "",
+						"type": "uint64"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userApplication_",
+						"type": "address"
+					}
+				],
+				"name": "getReceiveLibraryAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userApplication_",
+						"type": "address"
+					}
+				],
+				"name": "getReceiveVersion",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userApplication_",
+						"type": "address"
+					}
+				],
+				"name": "getSendLibraryAddress",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "userApplication_",
+						"type": "address"
+					}
+				],
+				"name": "getSendVersion",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "srcChainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "srcAddress_",
+						"type": "bytes"
+					}
+				],
+				"name": "hasStoredPayload",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isReceivingPayload",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isSendingPayload",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "srcChainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "srcAddress_",
+						"type": "bytes"
+					},
+					{
+						"internalType": "address",
+						"name": "dstAddress_",
+						"type": "address"
+					},
+					{
+						"internalType": "uint64",
+						"name": "nonce_",
+						"type": "uint64"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gasLimit_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "payload_",
+						"type": "bytes"
+					}
+				],
+				"name": "receivePayload",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "srcChainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "srcAddress_",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "payload_",
+						"type": "bytes"
+					}
+				],
+				"name": "retryPayload",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "dstChainId_",
+						"type": "uint16"
+					},
+					{
+						"internalType": "bytes",
+						"name": "destination_",
+						"type": "bytes"
+					},
+					{
+						"internalType": "bytes",
+						"name": "payload_",
+						"type": "bytes"
+					},
+					{
+						"internalType": "address payable",
+						"name": "refundAddress_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "zroPaymentAddress_",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "adapterParams_",
+						"type": "bytes"
+					}
+				],
+				"name": "send",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_version",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "_chainId",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_configType",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_config",
+						"type": "bytes"
+					}
+				],
+				"name": "setConfig",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_version",
+						"type": "uint16"
+					}
+				],
+				"name": "setReceiveVersion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "_version",
+						"type": "uint16"
+					}
+				],
+				"name": "setSendVersion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/ILayerZeroEndpoint.sol": "ILayerZeroEndpoint"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/ILayerZeroEndpoint.sol": {
+			"keccak256": "0x0bc379177e7898b99f308b4fe4ade7ec7c310e2e999922352a955053aa0152a6",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://acbdcc8f41a11500b5537808cbe1bf82d3206821846499e25bed26afb298e293",
+				"dweb:/ipfs/QmQ3jdP1yYfc1iKCWbbTkMFSwk3hhJWVpUhFGJvFnsighp"
+			]
+		}
+	},
+	"version": 1
+}
